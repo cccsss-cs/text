@@ -1,0 +1,771 @@
+.header {
+    width: 1700px;
+    height: 120px;
+}
+
+.menu-item {
+    display: inline;
+    float: right;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+
+
+.navnavbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(249, 208, 22, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+
+.menu-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 36px 16px;
+    text-decoration: none;
+
+}
+
+.menu-item .search-container {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 36px 16px;
+    border: none;
+}
+
+/* 当鼠标悬停时把链接颜色更改为 #111（黑色） */
+.menu-item a:hover {
+    background-color: rgba(249, 208, 22, 0.1);
+}
+
+.menu-item .search-container button {
+    float: right;
+    padding: 1px 16px;
+    margin-top: 0px;
+    margin-right: 16px;
+    background: #ffffff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.menu-item .search-container button:hover {
+    background: #ccc;
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.slideshow-container .mySlides {
+    display: none;
+}
+
+
+
+.slideshow-container img {
+    vertical-align: middle;
+}
+
+/* 幻灯片容器 */
+.slideshow-container {
+    max-width: 1700px;
+    position: relative;
+    margin: auto;
+    font-family: Arial;
+}
+
+.slideshow-container .cover {
+    width: 1700px;
+    height: 106.126px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 890px;
+    left: 0px;
+}
+
+/* 下一个和上一个按钮 */
+.slideshow-container .prev,
+.slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* 将“下一个按钮”置于右侧 */
+.slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* 鼠标悬停时，添加带有一点透明的黑色背景色 */
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* 圆点/子弹/指示器 */
+.slideshow-container .dot-container {
+    position: absolute;
+    top: 750px;
+    left: 1250px;
+}
+
+.slideshow-container .dot {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #848484;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slideshow-container .active,
+.slideshow-container .dot:hover {
+    background-color: #404040;
+}
+
+/* 渐隐动画 */
+.slideshow-container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slideshow-container .text-block {
+    position: absolute;
+    top: 508px;
+    left: 148px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.slideshow-container .text-block .text1 {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 14.59px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 21.884px */
+}
+
+.slideshow-container .text-block .text2 {
+    color: #FFF;
+
+    /* H1 */
+    font-family: "Noto Sans S Chinese";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 133.333% */
+}
+
+.slideshow-container .text-block .text3 {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+}
+
+.information .image-bird {
+    position: absolute;
+    top: 1240px;
+    left: 120px;
+    display: inline-block;
+}
+
+.information .image-tiger {
+    position: absolute;
+    top: 1130px;
+    left: 260px;
+    display: inline-block;
+}
+
+
+.information .text-block {
+    position: absolute;
+    top: 1050px;
+    left: 900px;
+    width: 900px;
+    display: inline-block;
+}
+
+.information .text-block .text1 {
+
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    height: 130px;
+}
+
+.information .text-block .text1 span {
+    color: var(--Text-Color, #FB0);
+
+}
+
+.information .text-block .text2 {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    height: auto;
+
+}
+
+.information .reason {
+    list-style: none;
+    position: absolute;
+    top: 1320px;
+    left: 870px;
+
+}
+
+.information .reason img {
+    position: relative;
+    top: 8px;
+}
+
+.information .reason .text1 {
+    color: var(--Text-Color, #FB0);
+    font-family: "Noto Sans S Chinese";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.information .reason .text2-4 {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.information .list {
+    position: relative;
+    top: 384px;
+    left: 1130px;
+}
+
+.information .bili {
+    position: relative;
+    top: 250px;
+    left: 1180px;
+}
+
+.information .bili span {
+    position: relative;
+    top: -49px;
+    left: -77px;
+    color: var(--Text-Color, #464646);
+    text-align: center;
+    font-family: "Noto Sans S Chinese";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.information .explain {
+    position: relative;
+    top: 140px;
+    left: 1330px;
+    color: var(--Text-Color, #464646);
+
+    /* Ano */
+    font-family: "Noto Sans S Chinese";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.information .explain2 {
+    position: relative;
+    top: 180px;
+    left: 910px;
+    color: var(--Text-Color-, #FB0);
+
+    font-family: "Noto Sans S Chinese";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.notice {
+    position: relative;
+    width: 1500px;
+    top: 170px;
+    left: 0px;
+}
+
+.notice .notice-number .notice-item {
+    width: 400px;
+    height: 100px;
+    flex-shrink: 0;
+    background: #F5CF5D;
+    display: inline;
+    float: right;
+    align-items: center;
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    border-right: 35px solid rgba(76, 175, 80, 0);
+    border-left: 35px solid rgba(76, 175, 80, 0);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.notice .notice-number .notice-item span {
+    font-size: 47px;
+    position: relative;
+    left: 35px;
+    top: -40px;
+}
+
+.notice .notice-number {
+    margin: 0;
+    padding: 0;
+}
+
+.notice .notice-number .notice-item img {
+    position: relative;
+    top: 20px;
+    vertical-align: middle;
+}
+
+.notice p {
+    position: relative;
+    left: 300px;
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.map-container .map-title {
+    background: var(--Background, #FFFAD9);
+    position: relative;
+    height: 200px;
+    top: 120px;
+    z-index: -1;
+    display: flex;
+    /* 新增 */
+    flex-direction: column;
+    /* 新增 */
+    justify-content: center;
+    /* 新增 */
+    align-items: center;
+    /* 新增 */
+    min-height: 300px;
+    width: 1700px;
+    /* 修改为最小高度 */
+}
+
+.map-container .map-title .text1 {
+    color: var(--Text-Color-, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    max-width: 1700px;
+    /* 添加最大宽度 */
+    margin: 0 auto;
+    /* 配合max-width居中 */
+    padding: 0 20px;
+    /* 防止贴边 */
+}
+
+.map-container .map-title .text2 {
+    color: #657066;
+    text-align: center;
+    font-family: "Noto Sans S Chinese";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.map-container .map-img {
+    position: relative;
+    top: 200px;
+    width: auto;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.map-container .map-img .map-item1 {
+    display: inline;
+    left: 150px;
+    width: auto;
+    position: relative;
+}
+
+.map-container .species-inf {
+    display: inline;
+    position: relative;
+    top: -120px;
+    left: 200px;
+    width: 300px;
+}
+
+.classification {
+    background-image: url("images/backgroud-img.png");
+    position: relative;
+    top: 250px;
+    width: 1770px;
+    height: 810px;
+    flex-shrink: 0;
+}
+
+.classification .cla-text-box,
+.action .action-text-box {
+    position: relative;
+    top: 60px;
+    left: 150px;
+}
+
+.classification .cla-text1,
+.action .action-text1 {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.classification .cla-text2,
+.action .action-text2 {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+
+.classification span {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.classification .cla-monkey-container .cla-monkey-text1 {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    left: 22px;
+    top: 328px;
+}
+
+.classification .cla-monkey-container .cla-monkey-text2 {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: absolute;
+    left: 22px;
+    top: 371px;
+}
+
+.classification .cla-monkey-container .cla-monkey-text3 {
+    color: var(--Text-Color, #FB0);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    position: absolute;
+    left: 22px;
+    top: 453px;
+    text-decoration: none;
+    align-items: center;
+    display: inline-flex;
+}
+
+
+
+.classification .cla-monkey-container {
+    position: relative;
+    top: 70px;
+    left: 150px;
+
+}
+
+.classification .cla-crawl-container {
+    position: absolute;
+    top: 230px;
+    left: 520px;
+
+}
+
+.classification .cla-amphibian-container {
+    position: absolute;
+    top: 230px;
+    left: 1000px;
+
+}
+
+.classification .cla-bird-container {
+    position: absolute;
+    top: 490px;
+    left: 520px;
+
+}
+
+.classification .cla-fish-container {
+    position: absolute;
+    top: 490px;
+    left: 890px;
+
+}
+
+.action {
+    position: relative;
+    top: 250px;
+    width: 1770px;
+    height: 810px;
+    flex-shrink: 0;
+
+}
+
+.action span {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    position: absolute;
+    top: 205px;
+
+}
+
+.action .action-text2-4 {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 16px;
+    position: absolute;
+    top: 235px;
+}
+
+.action .action1-container {
+    position: absolute;
+    top: 210px;
+    left: 150px;
+}
+
+.action .action2-container {
+    position: absolute;
+    top: 210px;
+    left: 650px;
+}
+
+.action .action3-container {
+    position: absolute;
+    top: 210px;
+    left: 900px;
+}
+
+.action .action4-container {
+    position: absolute;
+    top: 210px;
+    left: 1150px;
+}
+
+.action .action1-container .action-system-text1 {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    left: 20px;
+    top: 300px;
+}
+
+.action .action1-container .action-system-text2 {
+    color: #FFF;
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: absolute;
+    left: 20px;
+    top: 341px;
+}
+
+.action .action1-container .action-system-text3 {
+    color: var(--Text-Color, #FB0);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    position: absolute;
+    left: 20px;
+    top: 395px;
+    text-decoration: none;
+    align-items: center;
+    display: inline-flex;
+}
+
+.footer-container {
+    position: relative;
+    top: 150px;
+    left: 0px;
+    width: 1700px;
+    height: 155px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-image: url("images/footer-bac.svg");
+
+}
+
+.footer-container .footer-content {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+.footer-container .foooter-vl {
+    background-color: #ffd35c;
+    border-left: 10px #ffd35c;
+    height: 85px;
+    width: 8px;
+    position: absolute;
+    top: 34px;
+    left: 295px;
+}
+
+.footer-container .footer-text {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 38px;
+    left: 340px;
+}
+
+.footer-container .footer-img-1 {
+    position: absolute;
+
+    left: 1520px;
+    overflow: hidden;
+}
+
+.footer-container .footer-img-2 {
+    position: absolute;
+
+    left: 1130px;
+    overflow: hidden;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* 在小屏幕上，减小文字大小 */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
