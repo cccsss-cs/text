@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-search.css">
+
+    <script src='main.js'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="container clearfix">
+
+            <div class="collapse navbar-collapse">
+
+                <nav class="primary-menu" aria-label="主导航菜单">
+                    <ul class="navnavbar-nav">
+
+                        <li style="float:left" class="menu-item">
+                            <a href="#" rel="home">
+                                <!-- 动态LOGO配置：支持后台管理系统替换 -->
+                                <img src="images/logo.svg" alt="tubiao" target="_blank">
+                            </a>
+                        </li>
+
+
+                        <li class="menu-item">
+                            <a href="#" target="_blank"><img src="images/personal center.png" alt="个人中心"></a>
+                        </li>
+
+                        <li class="menu-item">
+                            <div class="search-container">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="物种名称..." name="search"
+                                        style="border: none; outline: none">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+
+                            </div>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="#" target="_blank">科普文库</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" target="_blank">物种目录</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" target="_blank">首页</a>
+                        </li>
+                    </ul>
+                    <hr class="solid0">
+                    <hr class="solid0-1">
+                </nav>
+                <div class="big-search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="输入感兴趣的动物..." name="search" class="big-search-textcontainer">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <ul class="classify-container" classify>
+                <li class="classify-item">分类学</li>
+                <li class="classify-item">地域分布</li>
+                <li class="classify-item">国家重点保护野生动物等级</li>
+                <li class="classify-item">IUCN红色名录等级</li>
+            </ul>
+
+
+            <form>
+
+                <div class="reason-dropdown">
+                    <button type="button" class="dropbtn">濒危原因</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <label class="input-container">
+                            <input type="checkbox" name="reason" value="agri-production">农业生产
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+                        <label class="input-container">
+                            <input type="checkbox" name="reason" value="agri-production">生物资源利用
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label class="input-container">
+                            <input type="checkbox" name="reason" value="agri-production">自然环境影响
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+        <div class="vl"></div>
+        <div class="column right">
+            <h4 class="resault-text">结果&nbsp;<span class="search-num">12</span></h4>
+            <hr class="solid1">
+            <ul class="resault-classify">
+                <li>分类学</li>
+                <li>国家重点保护<br>野生动物等级</li>
+                <li>濒危原因</li>
+            </ul>
+            <hr class="solid2">
+            <span class="search-resault1"><a href="#"><img src="images/dianjinsihou.svg"></a></span>
+            <span class="search-resault2"><a href="#"><img src="images/heiyehou.svg"></a></span>
+            <span class="search-resault3"><a href="#"><img src="images/yinzhihuiyehou.svg"></a></span>
+            <div class="next-button">
+                <a href="#" class="previous round">‹</a>
+                <a href="#" class="page1">1</a>
+                <a href="#" class="page2">2</a>
+                <a href="#" class="next round">›</a>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('页脚加载失败');
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('错误:', error);
+                document.getElementById('footer-container').innerHTML = '<p>页脚加载失败</p>';
+            });
+
+    </script>
+</body>
+
+</html>

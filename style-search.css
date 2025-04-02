@@ -1,0 +1,488 @@
+.slideshow-container,
+.collapse.navbar-collapse {
+    background-image: url("images/background2.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260px;
+    /* 根据实际图片比例调整 */
+    position: relative;
+
+
+}
+
+/* 确保内容层在渐变层之上 */
+.navbar-nav {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-item {
+    display: inline;
+    float: right;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+
+
+.navnavbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(249, 208, 22, 0);
+    top: 0;
+    width: 100%;
+
+}
+
+
+.menu-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 36px 16px;
+    text-decoration: none;
+
+}
+
+.menu-item a:hover {
+    background-color: rgba(249, 208, 22, 0.1);
+}
+
+.menu-item .search-container {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 36px 16px;
+    border: none;
+}
+
+.menu-item .search-container button {
+    float: right;
+    padding: 0px 16px;
+    margin-top: 4px;
+    margin-right: 16px;
+    background: #ffffff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.menu-item .search-container button:hover {
+    background: #ccc;
+}
+
+.solid0 {
+    border-top: 1px solid #C6C6C6;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 1550px;
+}
+
+.solid0-1 {
+    border-top: 6px solid #F5CF5D;
+    position: absolute;
+    top: 97px;
+    left: 1175px;
+    width: 65px;
+}
+
+/* 新增或修改以下CSS */
+
+/* 1. 居中大搜索框容器 */
+.big-search {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 650px;
+
+}
+
+/* 2. 创建输入框和按钮的容器 */
+.big-search form {
+    display: flex;
+    /* 弹性布局使元素同行 */
+    width: 100%;
+    /* 继承父容器宽度 */
+    align-items: stretch;
+    /* 子元素等高 */
+}
+
+/* 3. 调整输入框样式 */
+.big-search-textcontainer {
+    height: 50px;
+    width: calc(100% - 50px);
+    /* 留出按钮空间 */
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    /* 左侧圆角 */
+    font-size: 16px;
+}
+
+/* 4. 调整按钮样式 */
+.big-search button {
+    width: 50px;
+    /* 固定按钮宽度 */
+    height: 50px;
+    /* 与输入框同高 */
+    border-radius: 0 6px 6px 0;
+    /* 右侧圆角 */
+    background: #FFD35C;
+    transition: background 0.3s;
+    /* 添加过渡效果 */
+}
+
+.big-search button:hover {
+    background: #e6b800;
+    /* 悬停颜色加深 */
+}
+
+/* 5. 移除原有浮动样式 */
+.big-search button {
+    float: none;
+    /* 清除原有float: right */
+    margin-right: 0;
+    /* 清除原有右边距 */
+}
+
+
+
+
+.footer-container {
+    position: relative;
+    top: 150px;
+    left: 0px;
+    width: 1700px;
+    height: 155px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-image: url("images/footer-bac.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.footer-container .footer-content {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+.footer-container .foooter-vl {
+    background-color: #ffd35c;
+    border-left: 10px #ffd35c;
+    height: 85px;
+    width: 8px;
+    position: absolute;
+    top: 34px;
+    left: 325px;
+}
+
+.footer-container .footer-text {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 38px;
+    left: 340px;
+}
+
+.footer-container .footer-img-1 {
+    position: absolute;
+
+    left: 1520px;
+    overflow: hidden;
+}
+
+.footer-container .footer-img-2 {
+    position: absolute;
+
+    left: 1130px;
+    overflow: hidden;
+}
+
+/* 创建两个不等的列并并排浮动 */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+    /* 应该移除。仅用于演示 */
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
+
+/* 在列之后清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.reason-dropdown {
+    position: relative;
+    display: inline-block;
+    top: 80px;
+    left: 65px;
+    /* 关键属性 */
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-content {
+
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    /* 紧接按钮下方 */
+    left: 0;
+    /* 与按钮左对齐 */
+    top: 100%;
+    left: 0;
+}
+
+
+
+.reason-dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+
+.dropdown-content input {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content input:hover {
+    background-color: #ddd;
+}
+
+.input-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+/* 隐藏浏览器的默认复选框 */
+.input-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: block;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* 鼠标悬停时，添加灰色背景颜色 */
+.input-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* 选中该复选框后，添加蓝色背景 */
+.input-container input:checked~.checkmark {
+    background-color: #FFD35C;
+}
+
+/* 创建复选标记/指示器（未选中时隐藏） */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* 选中时显示复选标记 */
+.input-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* 设置复选标记/指示器的样式 */
+.input-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.classify-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 65px;
+    top: 50px;
+}
+
+.classify-item {
+    text-decoration: none;
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 150% */
+}
+
+.vl {
+    border-left: 2px solid #C6C6C6;
+    /* 添加边框类型 */
+    height: 700px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    z-index: 1;
+}
+
+hr.solid1 {
+    border-top: 2px solid #C6C6C6;
+    position: absolute;
+    top: 326px;
+    left: 330px;
+    width: 1150px;
+}
+
+hr.solid2 {
+    border-top: 2px solid #C6C6C6;
+    position: absolute;
+    top: 450px;
+    left: 330px;
+    width: 1150px;
+}
+
+.resault-text {
+    position: absolute;
+    top: 285px;
+    left: 350px;
+}
+
+.search-num {
+    color: var(--Text-Color, #FB0);
+    font-family: "Noto Sans S Chinese";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.resault-classify {
+    color: var(--Text-Color, #464646);
+    font-family: "Noto Sans S Chinese";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 23px;
+    list-style-type: none;
+    position: absolute;
+    top: 345px;
+    left: 310px;
+}
+
+.search-resault1 {
+    position: absolute;
+    left: 350px;
+    top: 500px;
+}
+
+.search-resault2 {
+    position: absolute;
+    left: 650px;
+    top: 500px;
+}
+
+.search-resault3 {
+    position: absolute;
+    left: 950px;
+    top: 500px;
+}
+
+.next-button {
+    position: absolute;
+    left: 50%;
+    top: 850px;
+}
+
+.next-button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50%;
+}
+
+.next-button a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next-button .previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next-button .next {
+    background-color: #FFD35C;
+    color: white;
+}
+
+.next-button .round {
+    border-radius: 50%;
+}
