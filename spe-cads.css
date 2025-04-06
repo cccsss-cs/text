@@ -1,0 +1,646 @@
+ body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     /* 视窗高度 */
+     margin: 0;
+ }
+
+ .slideshow-container,
+ .collapse.navbar-collapse {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 260px;
+     position: relative;
+
+
+ }
+
+ /* 确保内容层在渐变层之上 */
+ .navbar-nav {
+     position: relative;
+     z-index: 1;
+ }
+
+ .menu-item {
+     display: inline;
+     float: right;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+
+ }
+
+
+
+ .navnavbar-nav {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: rgba(249, 208, 22, 0);
+     top: 0;
+     width: 100%;
+
+ }
+
+
+ .menu-item a {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 36px 16px;
+     text-decoration: none;
+
+ }
+
+ .menu-item a:hover {
+     background-color: rgba(249, 208, 22, 0.1);
+ }
+
+ .menu-item .search-container {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 36px 16px;
+     border: none;
+     border-radius: 25px;
+ }
+
+
+ .menu-item .search-container button {
+     float: right;
+     padding: 0px 16px;
+     margin-top: 4px;
+     margin-right: 16px;
+     background: #ffffff;
+     font-size: 15px;
+     border: none;
+     cursor: pointer;
+
+ }
+
+ .menu-item .search-container button:hover {
+     background: #ccc;
+ }
+
+ .solid0 {
+     border-top: 1px solid #C6C6C6;
+     position: absolute;
+     top: 100px;
+     left: 20px;
+     width: 1650px;
+ }
+
+ .solid0-1 {
+     border-top: 6px solid #F5CF5D;
+     position: absolute;
+     top: 97px;
+     left: 1175px;
+     width: 65px;
+ }
+
+ .footer-container {
+     position: absolute;
+     top: 3550px;
+     left: 0px;
+     width: 100%;
+     height: 155px;
+     flex-shrink: 0;
+     overflow: hidden;
+     background-image: url("images/footer-bac.svg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ .footer-container .footer-content {
+     position: absolute;
+     top: 50px;
+     left: 120px;
+ }
+
+ .footer-container .foooter-vl {
+     background-color: #ffd35c;
+     border-left: 10px #ffd35c;
+     height: 85px;
+     width: 8px;
+     position: relative;
+     top: 34px;
+     left: 345px;
+ }
+
+ .footer-container .footer-text {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 26px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     position: absolute;
+     top: 38px;
+     left: 340px;
+ }
+
+ .footer-container .footer-img-1 {
+     position: absolute;
+     top: 0px;
+
+     left: 1520px;
+     overflow: hidden;
+ }
+
+ .footer-container .footer-img-2 {
+     position: absolute;
+     top: 0px;
+     left: 1130px;
+     overflow: hidden;
+ }
+
+ /* 创建两个不等的列并并排浮动 */
+ .column {
+     float: left;
+     padding: 10px;
+ }
+
+ .left {
+     width: 25%;
+ }
+
+ .right {
+     width: 75%;
+ }
+
+ .aside-left-container {
+     position: relative;
+     top: -140px;
+     left: 50px;
+     height: 1500px;
+ }
+
+ .aside-left-container p {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     position: relative;
+     left: 15px;
+ }
+
+ .aside-left-container ul {
+     list-style-type: none;
+ }
+
+ .aside-left-container a {
+     text-decoration: none;
+     display: inline-block;
+     color: var(--Text-Color, #464646);
+ }
+
+ .aside-left-container a:hover {
+     background-color: white;
+     color: #ffd35c;
+ }
+
+ .aside-left-container .title {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     position: relative;
+     left: 15px;
+ }
+
+ .aside-left-container li {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 32px;
+ }
+
+ .solid2 {
+     border-top: 1px solid #C6C6C6;
+     position: relative;
+     left: -130px;
+     top: 0px;
+     width: 165px;
+ }
+
+ .right-container {
+     position: absolute;
+     top: 100px;
+     left: 400px;
+ }
+
+ .right-container .title {
+     color: var(--Text-Color, #FB0);
+
+     font-family: "Noto Sans S Chinese";
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .right-container .inf-title {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .right-container .inf-content {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+
+ }
+
+ .solid3 {
+     border-top: 1px solid #C6C6C6;
+     position: relative;
+     left: 0px;
+     top: 0px;
+     width: 900px;
+ }
+
+ .right-container .dis-list {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+     position: relative;
+     left: -40px;
+ }
+
+ .right-container .distinguish-list {
+     list-style-type: none;
+
+ }
+
+ .vl {
+     border-left: 2px solid #C6C6C6;
+     /* 添加边框类型 */
+     height: 3360px;
+     position: absolute;
+     top: 150px;
+     left: 300px;
+     z-index: 1;
+ }
+
+ .cards-container {
+     position: absolute;
+     top: 190px;
+     left: 0px;
+     border-radius: 6px;
+     background: #FFFCE5;
+     width: 900px;
+     height: 510px;
+ }
+
+ .cards-container .cards-vl {
+     border-left: 6px solid #FFD35C;
+     height: 450px;
+     position: relative;
+     top: 0px;
+     left: 300px;
+     z-index: 1;
+ }
+
+ .cards-container .triangle {
+     position: relative;
+     top: -470px;
+     left: 425px;
+ }
+
+ .cards-container .name {
+     color: var(--Text-Color, #FFD35C);
+     font-family: "Noto Sans S Chinese";
+     font-size: 48px;
+     font-style: normal;
+     font-weight: 900;
+     line-height: normal;
+     position: relative;
+     top: -520px;
+     left: 480px;
+ }
+
+ .cards-container .download {
+     position: relative;
+     top: -590px;
+     left: 805px;
+ }
+
+ .cards-container .location-container {
+     position: relative;
+     top: 525px;
+     left: 800px;
+ }
+
+ .cards-container .location-img {
+     position: relative;
+     top: -1020px;
+     left: -320px;
+
+ }
+
+ .cards-container .location-container .location-text1 {
+     color: #657066;
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     position: relative;
+     top: -1055px;
+     left: -287px;
+ }
+
+ .cards-container .location-container .location-text2 {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+     position: relative;
+     top: -1055px;
+     left: -264px;
+ }
+
+ .cards-container .text1 {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     position: relative;
+     top: 7px;
+     left: 20px;
+ }
+
+ .cards-container .text2 {
+     color: var(--dark-red, #9E2F2F);
+     font-family: "Noto Sans S Chinese";
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     position: relative;
+     top: -21px;
+     left: 270px;
+ }
+
+ .cards-container .nation-degree-container {
+     border-radius: 6px;
+     border: 2px solid rgba(255, 187, 0, 0.32);
+     position: absolute;
+     left: 485px;
+     top: 210px;
+     width: 344px;
+     height: 38px;
+ }
+
+ .cards-container .IUCN-degree-container {
+     border-radius: 6px;
+     border: 2px solid rgba(255, 187, 0, 0.32);
+     position: absolute;
+     left: 485px;
+     top: 270px;
+     width: 344px;
+     height: 38px;
+ }
+
+ .cards-container .reason-container {
+     position: absolute;
+     left: 505px;
+     top: 200px;
+ }
+
+ .cards-container .reason-container p {
+     color: var(--Text-Color, #464646);
+     font-family: "Noto Sans S Chinese";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     position: relative;
+     left: -20px;
+     top: 120px;
+ }
+
+ .cards-container .reason-container .reason1 {
+     width: 85px;
+     flex-shrink: 0;
+     position: relative;
+     left: -30px;
+     top: 115px;
+ }
+
+ .cards-container .reason-container .reason2 {
+     width: 85px;
+     flex-shrink: 0;
+     position: relative;
+     left: -10px;
+     top: 115px;
+ }
+
+ .cards-container .reason-container .reason3 {
+     width: 85px;
+     flex-shrink: 0;
+     position: relative;
+     left: 20px;
+     top: 115px;
+ }
+
+ .information-container {
+     position: absolute;
+     top: 710px;
+ }
+
+ body {
+     font-family: Verdana, sans-serif;
+     margin: 0;
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+ .show-picture .row>.column {
+     padding: 0px 8px;
+
+ }
+
+ .show-picture .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .show-picture .column0-1 {
+     float: left;
+     width: 50%;
+     padding: 0px 25px;
+ }
+
+ .show-picture .column0-2 {
+     float: left;
+     width: 25%;
+     padding: -1px 8px;
+ }
+
+ .show-picture .column0-3 {
+     float: left;
+     width: 25%;
+     padding: 0px 8px;
+ }
+
+ .show-picture .column-1 {
+     float: left;
+     width: 25%;
+ }
+
+
+ /* 模态框（背景） */
+ .show-picture .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     padding-top: 100px;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: black;
+ }
+
+ /* 模态框内容 */
+ .show-picture .modal-content {
+     position: relative;
+     background-color: #fefefe;
+     margin: auto;
+     padding: 0;
+     width: 90%;
+     max-width: 1200px;
+ }
+
+ /* 关闭按钮 */
+ .show-picture .close {
+     color: white;
+     position: absolute;
+     top: 10px;
+     right: 25px;
+     font-size: 35px;
+     font-weight: bold;
+ }
+
+ .show-picture .close:hover,
+ .show-picture .close:focus {
+     color: #999;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .show-picture .mySlides {
+     display: none;
+ }
+
+ .show-picture .cursor {
+     cursor: pointer;
+ }
+
+ /* 上一个和下一个按钮 */
+ .show-picture .prev,
+ .show-picture .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -50px;
+     color: white;
+     font-weight: bold;
+     font-size: 20px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+     -webkit-user-select: none;
+ }
+
+ /* 将"下一个按钮"定位到右侧 */
+ .show-picture .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+ }
+
+ /* 悬停时，添加略微透明的黑色背景 */
+ .show-picture .prev:hover,
+ .show-picture .next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* 数字文本（1/4 等） */
+ .show-picture .numbertext {
+     color: #f2f2f2;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+ }
+
+ .show-picture img {
+     margin-bottom: -4px;
+ }
+
+ .show-picture .caption-container {
+     text-align: center;
+     background-color: black;
+     padding: 2px 16px;
+     color: white;
+ }
+
+ .show-picture .demo {
+     opacity: 0.6;
+ }
+
+ .show-picture .active,
+ .show-picture .demo:hover {
+     opacity: 1;
+ }
+
+ .show-picture img.hover-shadow {
+     transition: 0.3s;
+ }
+
+ .show-picture .hover-shadow:hover {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .show-picture a {
+     color: var(--Text-Color, #474747);
+     font-family: "Noto Sans S Chinese";
+     font-size: 15px;
+     font-style: normal;
+     font-weight: 350;
+     line-height: 16px;
+     float: right;
+     text-decoration: none;
+ }

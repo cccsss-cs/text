@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="spe-cads.css">
+
+
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="container clearfix">
+
+            <div class="collapse navbar-collapse">
+
+                <nav class="primary-menu" aria-label="主导航菜单">
+                    <ul class="navnavbar-nav">
+
+                        <li style="float:left" class="menu-item">
+                            <a href="#" rel="home">
+                                <!-- 动态LOGO配置：支持后台管理系统替换 -->
+                                <img src="images/logo-black.svg" alt="tubiao" target="_blank">
+                            </a>
+                        </li>
+
+
+                        <li class="menu-item">
+                            <a href="#" target="_blank"><img src="images/personal center.png" alt="个人中心"></a>
+                        </li>
+
+                        <li class="menu-item">
+                            <div class="search-container">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="物种名称..." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+
+                            </div>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="#" target="_blank">科普文库</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" target="_blank">物种目录</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" target="_blank">首页</a>
+                        </li>
+                    </ul>
+                    <hr class="solid0">
+                    <hr class="solid0-1">
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <div class="aside-left-container">
+                <p>目录</p>
+                <hr class="solid2">
+                <div>
+                    <a href="#jianjie" class="title">简介</a>
+                    <ul>
+                        <li><a href="#wuzhongka">物种卡</a></li>
+                        <li><a href="#wuzhongxiangce">物种相册</a></li>
+                        <li><a href="#fenleixue">分类学</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#qixidi" class="title">栖息地</a>
+                    <ul>
+                        <li><a href="#qixidifenbu">栖息地分布</a></li>
+                        <li><a href="#qixiditezheng">栖息地特征</a></li>
+                        <li><a href="#zongjiguancha">踪迹观察</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#xixing" class="title">习性</a>
+                    <ul>
+                        <li><a href="#shenghuoxixing">生活习性</a></li>
+                        <li><a href="#fanzhifangshi">繁殖方式</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#shengtaiwei" class="title">生态位</a>
+                    <ul>
+                        <li><a href="#tiandi">天敌</a></li>
+                        <li><a href="#jingzhengzhe">竞争者</a></li>
+                        <li><a href="#shiyuan">食源</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#jiazhi" class="title">价值与发展</a>
+                    <ul>
+                        <li><a href="#dutejuese">在人类文明进程<br />中扮演独特角色</a></li><br />
+                        <li><a href="#teshujiyin">特殊基因</a></li>
+                        <li><a href="#keyanjinzhan">最新科研进展</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vl"></div>
+
+        <div class="column right">
+            <div class="right-container">
+                <p class="title" id="jianjie">简介</p>
+                <hr class="solid3">
+                <p class="inf-title" id="wuzhongka">物种卡</p>
+                <div class="cards-container">
+                    <div><img class="img" src="images/card-monkey.png"></div>
+
+                    <div class="triangle"><img src="images/triangle.svg" width="26px"></div>
+                    <div class="name">滇金丝猴</div>
+                    <div class="download"><a href="#" target="_self"><img src="images/download.png"></a></div>
+                    <div class="location-container">
+                        <div class="location-img"><img src="images/location_on.svg"></div>
+                        <span class="location-text1">分布</span>
+                        <span class="location-text2">中国云南省北部、西藏自治区东南部</span>
+                    </div>
+                    <div class="nation-degree-container">
+                        <span class="text1">国家重点保护野生动物等级</span>
+                        <div class="text2">一级</div>
+                    </div>
+                    <div class="IUCN-degree-container">
+                        <span class="text1">IUCN红色名录等级</span>
+                        <div class="text2">极危</div>
+                    </div>
+                    <div class="reason-container">
+                        <p class="reason-text">濒危原因</p>
+                        <span class="reason1"><img src="images/farme-reason.svg"></span>
+                        <span class="reason2"><img src="images/bio-reason.svg"></span>
+                        <span class="reason3"><img src="images/natural-reason.svg"></span>
+                    </div>
+                </div>
+                <div class="information-container">
+                    <p class="inf-title" id="fenleixue">分类学</p>
+                    <ul class="distinguish-list">
+                        <li class="dis-list">界·动物界（Animalia）</li>
+                        <li class="dis-list">门·脊索动物门（Chordata）</li>
+                        <li class="dis-list">纲·哺乳纲（Mammalia）</li>
+                        <li class="dis-list">目·灵长目（PRIMATES）</li>
+                        <li class="dis-list">科·猴科（Cercopithecidae）</li>
+                        <li class="dis-list">属·仰鼻猴属（Rhinopithecus）</li>
+                        <li class="dis-list">种·滇金丝猴 （Rhinopithecus bieti ）</li>
+                    </ul>
+                    <p class="title">物种相册</p>
+                    <hr class="solid3">
+
+
+
+
+                    <div class="show-picture">
+                        <div class="row">
+                            <div class="column0-1">
+                                <img src="images/xiangce-2.jpg" style="width: 400px;"
+                                    onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column0-2">
+                                <img src="images/card-monkey.png" style="width: 230px;"
+                                    onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column0-3">
+                                <img src="images/xiangce-3.jpg" style="width: 230px;"
+                                    onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                            </div>
+                            <div class="column0-3">
+                                <img src="images/xiangce-4.jpg" style="width: 230px;"
+                                    onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="show-more"><a href="#">查看全部图片></a></div>
+
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">×</span>
+                            <div class="modal-content">
+
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="images/xiangce-2.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 4</div>
+                                    <img src="images/card-monkey.png" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="images/xiangce-3.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="images/xiangce-4.jpg" style="width:100%">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+
+
+                                <div class="column-1">
+                                    <img class="demo cursor" src="images/xiangce-2.jpg" style="width:100%"
+                                        onclick="currentSlide(1)" alt="Beijing">
+                                </div>
+                                <div class="column-1">
+                                    <img class="demo cursor" src="images/card-monkey.png" style="width:100%"
+                                        onclick="currentSlide(2)" alt="Shanghai">
+                                </div>
+                                <div class="column-1">
+                                    <img class="demo cursor" src="images/xiangce-3.jpg" style="width:100%"
+                                        onclick="currentSlide(3)" alt="Wuhan">
+                                </div>
+                                <div class="column-1">
+                                    <img class="demo cursor" src="images/xiangce-4.jpg" style="width:100%"
+                                        onclick="currentSlide(4)" alt="Hangzhou">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="information">
+                        <p class="title">栖息地</p>
+                        <hr class="solid3">
+                        <p class="inf-title">栖息地分布</p>
+                        <p class="inf-content">滇金丝猴主要分布于中国云南省北部、西藏自治区东南部的高寒原始森林中，包括白马雪山国家级自然保护区、云岭省级<br />
+                            自然保护区等地，海拔一般在2500米至4700米之间。这些地区多为高山针叶林、针阔混交林等原始森林，具有丰富的植被<br />
+                            层次和复杂的生态环境，为滇金丝猴提供了充足的食物和栖息场所。
+                        </p>
+                        <p class="inf-title">栖息地特征</p>
+                        <p class="inf-content">滇金丝猴栖息的地区多为高山针叶林、针阔混交林等原始森林，这些森林具有丰富的植被层次和复杂的生态环境。其栖息<br />
+                            地的年平均气温较低，冬季漫长而寒冷，夏季短暂且凉爽，年降水量相对较多，湿度较大。高海拔地区的寒冷气候和相对<br />
+                            隐蔽的环境也有助于它们躲避天敌。
+                        </p>
+                        <p class="inf-title">踪迹观察</p>
+                        <p class="inf-content">滇金丝猴通常在树冠层活动，行动敏捷，善于攀爬和跳跃。它们会在树枝间穿梭觅食，也会在树干上休息。由于栖息地多<br />
+                            为高山密林，且猴群警惕性较高，观察其踪迹需要耐心和专业的野外观察技巧。科研人员常通过红外相机等设备对其活动
+                            <br />进行监测，以获取其行为和活动范围等信息。
+                        </p>
+                    </div>
+                    <div class="information">
+                        <p class="title">习性</p>
+                        <hr class="solid3">
+                        <p class="inf-title">生活习性</p>
+                        <p class="inf-content">滇金丝猴是典型的群居动物，猴群规模一般在几十只到上百只不等。它们以树叶、松萝、果实等植物为食，食性较为单<br />
+                            一。滇金丝猴具有较强的领地意识，猴群之间会通过叫声等方式来宣示领地。它们白天活动，夜晚在树上休息，活动范围<br />
+                            相对固定，但会根据食物资源的分布和季节变化进行一定程度的迁移。</p>
+                        <p class="inf-title">繁殖方式</p>
+                        <p class="inf-content">滇金丝猴的繁殖期一般在秋季，妊娠期约为6个月左右，次年春季产仔。每胎通常产1仔，幼猴出生后由母猴抚养，成长过<br />
+                            程中会逐渐学习觅食、攀爬等生存技能。雄猴在猴群中起到保护和领导的作用，而雌猴则主要负责抚育后代。</p>
+                    </div>
+                    <div class="information">
+                        <p class="title">生态位</p>
+                        <hr class="solid3">
+                        <p class="inf-title">天敌</p>
+                        <p class="inf-content">在自然环境中，滇金丝猴的主要天敌包括雪豹、豺等大型猛兽。但由于其栖息地多为高山密林，且猴群具有较强的警觉性<br />
+                            和群体防御能力，天敌对其威胁相对较小。此外，人类活动对其生存也构成了一定威胁，如非法狩猎、栖息地破坏等</p>
+                        <p class="inf-title">竞争者</p>
+                        <p class="inf-content">滇金丝猴在其栖息地可能会与其他灵长类动物或食草动物存在一定的食物竞争关系，如喜马拉雅塔尔羊等。但在食物资源<br />
+                            相对丰富的原始森林中，这种竞争关系并不十分突出。
+                        </p>
+                        <p class="inf-title">食源</p>
+                        <p class="inf-content">滇金丝猴的食物主要包括松萝、高山杜鹃、冷杉树叶等植物，其中松萝是其重要的食物来源之一。它们也会偶尔食用一些<br />
+                            果实和嫩芽。滇金丝猴的食性较为专一，对食物的选择性较强，这与其特殊的消化系统和生理结构有关。</p>
+                    </div>
+                    <div class="information">
+                        <p class="title">价值与发展</p>
+                        <hr class="solid3">
+                        <p class="inf-title">在人类文明过程中扮演独特角色</p>
+                        <p class="inf-content">滇金丝猴作为中国特有的珍稀物种，具有重要的生态价值和科研价值。它在维持高山森林生态系统的平衡中发挥着关键作<br />
+                            用，同时也是生物多样性保护的重要对象。此外，滇金丝猴独特的外貌和行为特征也使其成为了自然保护和生态旅游的重<br />
+                            要名片，吸引了众多科研人员和游客的关注。在文化方面，滇金丝猴也常被赋予一些特殊的寓意，如象征着吉祥、长寿<br />
+                            等，成为当地文化的一部分
+                        </p>
+                        <p class="inf-title">特殊基因</p>
+                        <p class="inf-content">滇金丝猴具有一些特殊的基因特征，使其能够适应高海拔、低氧、寒冷等极端环境。例如，它们的血液中含有一些特殊的<br />
+                            蛋白质，能够提高血液的携氧能力，帮助其在高海拔地区生存。此外，滇金丝猴的基因组研究还揭示了其与其他灵长类动<br />
+                            物在进化上的亲缘关系以及一些独特的进化适应机制。
+                        </p>
+                        <p class="inf-title">最新科研进展</p>
+                        <p class="inf-content">近年来，科研人员对滇金丝猴的保护和研究不断深入。例如，通过基因测序技术揭示了滇金丝猴的遗传多样性特征；利用<br />
+                            红外相机等设备对猴群的行为和活动范围进行了更精准的监测；同时，也在积极探索人工繁育和野化放归等保护措施，以<br />
+                            增加滇金丝猴的种群数量。此外，科研人员还在研究滇金丝猴的肠道微生物群落结构及其与宿主适应性进化的关系，以更<br />
+                            好地了解其生理生态特征。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('页脚加载失败');
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('错误:', error);
+                document.getElementById('footer-container').innerHTML = '<p>页脚加载失败</p>';
+            });
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
+</body>
+
+</html>
